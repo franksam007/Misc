@@ -1,3 +1,3 @@
 # Misc
 Misc tech tips   
-Used for recording misc tech tips
+Used to document misc tech tips
