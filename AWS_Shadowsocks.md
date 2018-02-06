@@ -8,10 +8,10 @@
    然后我们来安装 Shadowsocks吧，http://shadowsocks.org/en/download/servers.html，这里列出了所有的服务器版本，各种支持啊，我很高兴的选择了 Node.js 版，先安装 Node.js，可以点这里下载，然后 npm install -g shadowsocks 
 当然,如果首次安装,你可能因为缺少一些必要的环境而报错.你可以查看我的另一篇如何安装Node.js和如何搭建Web环境获得帮助.
 
-   搞定！接下来进行配置，我的配置文件在这里/usr/local/lib/node_modules/shadowsocks/config.json
+   搞定！接下来进行配置，配置文件在这里/usr/local/lib/node_modules/shadowsocks/config.json。如果nodejs安装在别的位置，则路径也相应的不同。
    <pre><code>{
     "server":"0.0.0.0",
-    "server_port":8388,
+    "server_port":8888,
     "local_address":"127.0.0.1",
     "local_port":1080,
     "password":"barfoo!",
@@ -38,3 +38,4 @@ ssserver -p 服务器端口 -k 密码 -m 加密方法</code></pre>
 ### 客户端
 
    搞完了服务器，搞客户端，Shadowsocks 客户端那个多呀，http://shadowsocks.org/en/download/clients.html 都支持。下面说一下 Mac 的配置，其他的一样样的，从上面的链接下载ShadowsocksX，然后启动ShadowsocksX，客户端配置参照下图，IP 填你的云主机的 IP 就 OK 了。
+   官方地址已经被屏蔽，可以通过github下载客户端，https://github.com/shadowsocks/shadowsocks-windows/releases
